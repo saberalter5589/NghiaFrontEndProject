@@ -1,0 +1,30 @@
+
+*{
+  font-family: "Times New Roman", Times, serif;
+}
+
+.jumbotron{
+  width: 86%;
+  margin: auto;
+}
+
+#appTitle {
+  font-size: 50px;
+  text-align: center;
+  color: #3377ff;
+}
+
+#SubmitTaskButton{
+  text-align: center;
+}
+
+#SubmitTaskButton  button{
+  font-size: 25px;
+  height: 45px;
+  margin: auto;
+}
+
+#intro{
+  color: #e60000;
+  text-align: center;
+}

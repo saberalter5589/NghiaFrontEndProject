@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="fetchTasks()">
+    <div class="container">
+
+      <!--Introduction-->
+      <h1 id="appTitle">To Do List</h1>
+
+      <!--Input Information section-->
+      <div class="jumbotron">
+        <h3 id="intro">What's your task?</h3>
+        <form id="TaskInputForm">
+          <!--Task Detail Input-->
+          <div class="form-group">
+            <label for="taskDetail">Please input your task detail: </label>
+            <input id="taskDetail" class="form-control" type="text" placeholder="Input your task here" required>
+          </div>
+          <!--Task Urgency Input-->
+          <div class="form-group">
+            <label for="taskUrgency">How urgent is your task: </label>
+            <select  required id="taskUrgency" class="form-control">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+          <!--Task Due Date Input -->
+          <div class="form-group">
+            <label for="dateFinish">Please input your expected finish date (month/day/year): </label>
+            <input id="dateFinish" class="form-control" type="date" required>
+          </div>
+          <!--Submit button -->
+            <button  class="btn btn-success" type="submit">Submit Task</button>
+        </form>
+      </div>
+
+      <!--To Do List section-->
+      <div class="col-lg-12">
+        <div id="tasksList">
+
+        </div>
+      </div>
+
+      <!--Footer-->
+
+    </div>
+
+
+
+
+    <!--Embedded section-->
+        <script src="https://chancejs.com/chance.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+  </body>
+</html>
